@@ -1,0 +1,219 @@
+/* custom google plus style theme */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  background-color:#e0e0e0;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+.navbar-default {background-color:#f4f4f4;margin-top:0px;border-width:0;z-index:5;}
+.navbar-default .navbar-brand { padding: 21px 15px; height: 62px;}
+#navbar-collapse2 { margin-top: 10px; }
+.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > li:hover > a {border:0 solid #4285f4;border-bottom-width:2px;font-weight:800;background-color:transparent;}
+.navbar-default .dropdown-menu {background-color:#ffffff;}
+.navbar-default .dropdown-menu li > a {padding-left:30px;}
+
+.navbar-form {
+    width: 100%;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.header {background-color:#ffffff;border-width:0;}
+.header .navbar-collapse {background-color:#ffffff;}
+.btn,.form-control,.panel,.list-group,.well {border-radius:1px;box-shadow:0 0 0;}
+.form-control {border-color:#d7d7d7;}
+.btn-primary {border-color:transparent;}
+.btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {background-color:#4285f4;}
+.btn-plus {background-color:#ffffff;border-width:1px;border-color:#dddddd;box-shadow:1px 1px 0 #999999;border-radius:3px;color:#666666;text-shadow:0 0 1px #bbbbbb;}
+.well,.panel {border-color:#d2d2d2;box-shadow:0 1px 0 #cfcfcf;border-radius:3px;}
+.btn-success,.label-success,.progress-bar-success{background-color:#65b045;}
+.btn-info,.label-info,.progress-bar-info{background-color:#a0c3ff,border-color:#a0c3ff;}
+.btn-danger,.label-danger,.progress-bar-danger{background-color:#dd4b39;}
+.btn-warning,.label-warning,.progress-bar-warning{background-color:#f4b400;color:#444444;}
+
+hr {border-color:#ececec;}
+button {
+	outline: 0;
+}
+textarea {
+  resize: none;
+  outline: 0;
+  
+}
+.panel .btn i,.btn span{
+  color:#666666;
+}
+
+.yesdice .panel .panel-heading {
+    background: #43ac6a;
+    color: #fff;
+}
+
+.nodice .panel .panel-heading {
+    background: #dd3333;
+    color: #fff; 
+}
+.panel .panel-heading {
+  font-weight:700;
+  font-size:16px;
+  border-color:#ffffff;
+  background: #565a5c;
+  color: #fff;
+  border-bottom: 0px solid #ffffff; 
+}
+
+.panel .panel-default {
+  border-color:#cccccc;
+}
+
+.panel .panel-thumbnail {
+  padding:0;
+}
+
+.panel .img-circle {
+  width:50px;
+  height:50px;
+}
+
+.list-group-item:first-child,.list-group-item:last-child {
+	border-radius:0;
+}
+
+
+.modal-dialog {
+ width: 450px;
+}
+
+.modal-footer {
+ border-width:0;
+}
+
+.dropdown-menu {
+   background-color:#f4f4f4;
+   border-color:#f0f0f0;
+   border-radius:0;
+   margin-top:-1px;
+}
+/* end theme */
+
+/* template layout*/
+#subnav {
+	position:fixed;
+    width:100%;
+}
+
+@media (max-width: 768px) {
+	#subnav {
+	padding-top: 6px;
+	}
+}
+
+#main {
+	padding-top:70px;
+}
+
+/*
+ * Custom
+ */
+
+ strong.heading {
+  font-size: 125%;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: 17px;
+}
+
+strong.heading i {
+    margin-right: 7px;
+}
+
+.results {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.results li {
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.results li a {color: inherit; }
+
+.results li .fa {
+    font-size: 16px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.notavailable {
+    color: #dd4b39;
+}
+
+.available {
+    color: #65b045;
+}
+
+.available .finished, .notavailable .finished {
+    display: inline-block;
+}
+
+.finished, .available .waiting, .notavailable .waiting {
+    display: none;
+}
+
+.fav {
+    color: #ffffff;
+}
+.fav .full {
+    display: none;
+}
+
+.fav .hollow {
+    visibility: hidden;
+}
+
+.nodice .fav .hollow, .yesdice .fav .hollow {
+    visibility: visible;
+}
+
+.favourite .fav .full {
+    display: inline-block;
+}
+.favourite .fav .hollow {
+    display: none; 
+}
+
+.fav:hover {
+    color: #f4b400;
+}
+
+.fav:hover .full {
+    display: inline-block;
+}
+
+.favourite .fav:hover .full {
+    display: none;
+}
+
+.fav:hover .hollow {
+    display: none;
+}
+
+.favourite .fav:hover .hollow {
+    display: inline-block;
+}
+
+
+/* tabs */
+.showfavourites .singleRequest.favourite {
+    display: block;
+}
+
+.showavailable .nodice, .showfavourites .singleRequest {
+    display: none;
+}
