@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-$results['seeurl'] = 'https://instagram.com/'.$domain.'/';
+$results['seeurl'] = 'https://www.instagram.com/'.$domain.'/';
 $http_status = httpStatus($results['seeurl']);
 
 if($http_status == 404) {
