@@ -215,9 +215,9 @@ function getOtherResult(srchterm, network) {
 
 function outputResult(srchterm, ext, binary, singleurl) {
     if(binary == 1) {
-        $('.'+srchterm+' .result'+ext).addClass('available');
+        $('.'+srchterm+' .result'+ext).addClass('available').append(' <i class="fa fa-thumbs-up"></i>');
     } else {
-        $('.'+srchterm+' .result'+ext).addClass('notavailable').wrapInner('<a href="'+singleurl +'" target="_blank"/>');
+        $('.'+srchterm+' .result'+ext).addClass('notavailable').wrapInner('<a href="'+singleurl +'" target="_blank"/>').append(' <i class="fa fa-thumbs-down"></i>');
         srchtermArray[srchterm].status = -1;
     }
 }
